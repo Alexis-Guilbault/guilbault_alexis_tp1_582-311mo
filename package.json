@@ -1,0 +1,24 @@
+{
+  "name": "guilbault_alexis_tp1_582-311mo",
+  "version": "1.0.0",
+  "description": "TP1 du cours de Web 3 (582 311 MO) par Alexis Guilbault",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexis-Guilbault/guilbault_alexis_tp1_582-311mo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexis-Guilbault/guilbault_alexis_tp1_582-311mo/issues"
+  },
+  "homepage": "https://github.com/Alexis-Guilbault/guilbault_alexis_tp1_582-311mo#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1"
+  }
+}
