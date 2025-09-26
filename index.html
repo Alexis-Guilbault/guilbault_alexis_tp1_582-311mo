@@ -3,54 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <title>Critique d'Omori</title>
 </head>
 <body class="container-flex d-flex flex-column justify-content-between min-vh-100">
-    <header class="bg-primary fascinate-regular py-">
+    <header class="bg-primary fascinate-regular py-5 px-2 text-white">
         <h1 class="display-1 text-center">Omori (2020) d'Omocat</h1>
-        <p class="display-4 text-center">Critique par Alexis Guilbault <i class="bi bi-controller"></i></p>
+        <p class="display-4 text-center">Critique/Analyse par Alexis Guilbault <i class="bi bi-controller"></i></p>
+        <nav class="container navbar navbar-expand-lg navbar-secondary bg-secondary rounded-4 p-2">
+            <div class="container-fluid d-flex align-items-center">
+                <a class="navbar-brand fs-4" href="#">Table des matières</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav d-flex justify-content-end w-100">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" aria-current="page" href="#intro">Introduction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#ami">L'amitié</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#emotion">La santé mentale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#conclusion">Conclusion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
         <article class="container suse-mono-regular py-5">
-            <section class="row py-2">
+            <section class="row py-2" id="intro">
                 <h2 class="display-3 col-12 bg-secondary fascinate-regular py-1">Introduction</h2>
-                <figure class="col-12 col-md-5 d-flex flex-column align-items-center justify-content-center bg-black text-white my-2 py-1">
-                    <img src="./medias/images/page_couverture.jpg" alt="Page couverture du jeu Omori" class="img-fluid my-2">
-                    <figcaption>source : Wikipédia</figcaption>
+                <figure class="col-12 col-md-5 d-flex flex-column align-items-center justify-content-around bg-black text-white my-2 py-1">
+                    <img src="./medias/images/page_couverture.jpg" alt="Page couverture du jeu Omori" class="img-fluid my-2 border border-2 border-white">
+                    <figcaption class="fs-4">source : Wikipédia</figcaption>
                 </figure>
-                <p class="col-12 col-md-5 h5">Au Noêl 2020, le marché du jeu vidéo indépendant a eu comme cadeau la sortie d'Omori, fait par Omocat sur RPG Maker. Nous incarnons Sunny, un «Hikkikomori», qui s'isole dans ses rêves pour éviter d'affronter un traumatisme passé. Avec le moins de spoilers possible, j'aimerais aborder le gameplay et la manière dont il accentue les thèmes principaux du jeu, soit l'amitié et la santé mentale.</p>
+                <p class="col-12 col-md-5 h5">Au Noël de l'an 2020, le marché du jeu vidéo indépendant a eu comme cadeau la sortie d'Omori, fait par Omocat sur RPG Maker. Nous incarnons Sunny, un «Hikkikomori», qui s'isole dans ses rêves pour éviter d'affronter un traumatisme passé. Avec le moins de spoilers possible, j'aimerais critiquer le gameplay et la manière dont il accentue les thèmes principaux du jeu, soit l'amitié et la santé mentale.</p>
             </section>
 
-            <section class="row py-2">
+            <hr class="border border-2 border-primary">
+
+            <section class="row py-2" id="ami">
                 <h2 class="display-3 col-12 bg-secondary fascinate-regular py-1">L'amitié</h2>
-                <p class="col-12 col-md-5 h5">Au Noêl 2020, le marché du jeu vidéo indépendant a eu comme cadeau la sortie d'Omori, fait par Omocat sur RPG Maker. Nous incarnons Sunny, un «Hikkikomori», qui s'isole dans ses rêves pour éviter d'affronter un traumatisme passé. Avec le moins de spoilers possible, j'aimerais aborder le gameplay et la manière dont il accentue les thèmes principaux du jeu, soit l'amitié et la santé mentale.</p>
-                <figure class="col-12 col-md-5 d-flex flex-column align-items-center justify-content-center bg-black text-white my-2 py-1">
-                    <img src="./medias/images/image_amitie.jpg" alt="Image d'un combat standard, Kel a les options de «follow-up moves»" class="img-fluid my-2">
-                    <figcaption>source : Steam</figcaption>
+                <p class="col-12 col-xl-5 h5">Premièrement, parlons de l'intégration du thème de l'amitié dans le gameplay d'Omori. Tout d'abord, dans le système de combat, il est possible de faire des «follow-up moves», permettant aux amis d'interagir pendant des tours (voir l'image), donnant plusieurs effets (tel que changer l'émotion courante d'un personnage, soigner, etc.) et, essentiellement, rendre les combats plus dynamiques et engageants. De ce fait, nous pouvons voir en temps-réel les relations entre les membres du groupe d'amis, ainsi que leur évolution au fur et à mesure que le jeu avance. Ensuite, il y a le système de "tagging" qui permet de changer le "personnage joueur" parmi les quatre membres, chacun avec son habileté spéciale. Ceci établit un pied d'égalité. Sunny/Omori n'est pas le leader du groupe, il n'y a pas d'hiérarchie dans celui-ci après tout. Bref, le sentiment d'amitié est omniprésente dans le gameplay de l'œuvre.</p>
+                <figure class="col-12 col-xl-5 d-flex flex-column align-items-center justify-content-around bg-black text-white my-2 py-1">
+                    <img src="./medias/images/image_amitie.jpg" alt="Image d'un combat standard, Kel a les options de «follow-up moves»" class="img-fluid my-2 border border-2 border-white">
+                    <figcaption class="fs-4">source : Steam</figcaption>
                 </figure>
             </section>
 
-            <section class="row py-2">
+            <hr class="border border-2 border-primary">
+
+            <section class="row py-2" id="emotion">
                 <h2 class="display-3 col-12 bg-secondary fascinate-regular py-1">La santé mentale</h2>
-                <figure class="col-12 col-md-5 d-flex flex-column align-items-center justify-content-center bg-black text-white my-2 py-1">
-                    <img src="./medias/images/combat_something.jpg" alt="Image du combat contre «something in the dark»" class="img-fluid my-2">
-                    <figcaption>source : Steam</figcaption>
+                <figure class="col-12 col-xxl-5 d-flex flex-column align-items-center justify-content-around bg-black text-white my-2 py-1">
+                    <img src="./medias/images/combat_something.jpg" alt="Image du combat contre «something in the dark»" class="img-fluid my-2 border border-2 border-white">
+                    <figcaption class="fs-4">source : Steam</figcaption>
                 </figure>
-                <p class="col-12 col-md-5 h5">Au Noêl 2020, le marché du jeu vidéo indépendant a eu comme cadeau la sortie d'Omori, fait par Omocat sur RPG Maker. Nous incarnons Sunny, un «Hikkikomori», qui s'isole dans ses rêves pour éviter d'affronter un traumatisme passé. Avec le moins de spoilers possible, j'aimerais aborder le gameplay et la manière dont il accentue les thèmes principaux du jeu, soit l'amitié et la santé mentale.</p>
+                <p class="col-12 col-xxl-5 h5">Deuxièmement, Omori aborde la santé mentale de plusieurs manières à travers son gameplay. Avant tout, plusieurs boss du jeu (plus notamment les combats contre les "somethings") représentent des phobies (ex. Arachnophobie, thalassophobie, etc.) ou des traumatismes (ex. la mort d'une certaine personne, son expérience de presque-mort, etc.) de Sunny. Ceci, déjà, enrichit Sunny en tant que personnage en lui donnant des peurs et un passé, mais surtout ça donne un aspect horreur au jeu, illustrant la santé mentale déclinante de Sunny. Après, il y a le système d'émotions qui joue un rôle crucial dans les combats autant en rêve que dans la vraie vie. Les personnages et les ennemis ont une émotion variable qui change leurs statistiques et leurs avantages (la joie bat la colère, par exemple). Souvent, Sunny aura l'émotion "effrayé" (qui évolue éventuellement en "panique"), qui fait perdre automatiquement un tour pour guérir. Ceci montre qu'il a une force émotionnelle douteuse. En résumé, le gameplay est efficacement utilisé pour illustrer la santé mentale faible de Sunny.</p>
             </section>
 
-            <section class="row bg-success p-3 text-white my-2">
+            <hr class="border border-2 border-primary">
+
+            <section class="row bg-success d-flex flex-column align-items-center justify-content-around p-3 text-white my-2 rounded-4 text-center" id="conclusion">
                 <h2 class="display-3 col-12 fascinate-regular py-1">Conclusion</h2>
-                <p class="col-12 h5">Au Noêl 2020, le marché du jeu vidéo indépendant a eu comme cadeau la sortie d'Omori, fait par Omocat sur RPG Maker. Nous incarnons Sunny, un «Hikkikomori», qui s'isole dans ses rêves pour éviter d'affronter un traumatisme passé. Avec le moins de spoilers possible, j'aimerais aborder le gameplay et la manière dont il accentue les thèmes principaux du jeu, soit l'amitié et la santé mentale.</p>
+                <p class="col-12 h5">En conclusion, Omori utilise habilement son gameplay pour explorer des thèmes profonds tel que la santé mentale (via les phobies et les émotions) et l'amitié (via les "follow-up moves" et le "tagging"). Il peut être critiqué sur quelques aspects, mais pour l'intégration des thèmes dans le gameplay, c'est un 10/10 !</p>
+                <button type="button" class="col-6 btn btn-danger mt-4 mb-1 p-4 pb-3 rounded-5 fascinate-regular" data-bs-toggle="modal" data-bs-target="#voirPlus"><span class="display-6">Voir Plus <i class="bi bi-newspaper"></i></span></button>
+
+                <div class="modal fade" id="voirPlus" tabindex="-1" aria-labelledby="voirPlusLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-info text-white p-4">
+                                <h5 class="modal-title display-4 fascinate-regular" id="voirPlusLabel">À regarder ensuite</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            
+                            <div class="modal-body bg-info-subtle text-start p-4">
+                                <p><a href="https://store.steampowered.com/app/3660270/Corrupted_World/" class="text-danger fs-2" target="_blank">Corrupted World : Qu'est-ce qu'une conscience ?</a></p>
+                                <br>
+                                <p><a href="#" class="text-danger fs-2">Hollow Knight : la place de la religion dans la politique.</a></p>
+                            </div>
+                            
+                            <div class="modal-footer bg-info text-white">
+                                <button type="button" class="btn btn-danger fascinate-regular py-3 px-5" data-bs-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </article>
     </main>
 
-    <footer class="bg-secondary fascinate-regular">
+    <footer class="bg-secondary fascinate-regular pb-3 pt-4 text-white">
         <p class="text-center display-6">© 2025 Alexis Guilbault</p>
     </footer>
 </body>
